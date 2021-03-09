@@ -110,6 +110,14 @@ body{
 .navbar{
     top: 0;
     box-shadow: 0 4px 9px rgba(0,0,0,0.05);
+    &__responsive{
+        &__li{
+            display: none;
+            @media screen and (max-width: 768px){
+                display: block;
+            }
+        }
+    }
 }
 .badge-pos-right{
     top: 1rem !important;
@@ -369,6 +377,9 @@ body{
             width: 100%;
         }
     }
+    &:hover{
+        transform: scaleX(1) !important;
+    }
 }
 // welcome-back section
 .welcome-back{
@@ -479,6 +490,26 @@ body{
             }
         }
 
+}
+#sidemenu-btn{
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+#sidemenu{
+    position: fixed;
+    top:0;
+    right: -400px; 
+    width: 400px;
+    z-index: 99999999999999999;
+}
+
+#sidemenu__options{
+    background-color:#fff;
+    padding: 70px 30px;
+    min-height: 100vh;
+    max-height: 800px;
+    overflow-y: auto;
 }
 input[type="checkbox"] {
     visibility: hidden;

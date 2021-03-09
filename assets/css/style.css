@@ -122,6 +122,16 @@ body {
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.05);
 }
 
+.navbar__responsive__li {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__responsive__li {
+    display: block;
+  }
+}
+
 .badge-pos-right {
   top: 1rem !important;
   right: 1rem !important;
@@ -399,6 +409,10 @@ body {
   width: 100%;
 }
 
+.download:hover {
+  transform: scaleX(1) !important;
+}
+
 .welcome-back__overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -525,6 +539,28 @@ body {
   .mobile-app .card {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 800px) {
+  #sidemenu-btn {
+    display: none;
+  }
+}
+
+#sidemenu {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  z-index: 99999999999999999;
+}
+
+#sidemenu__options {
+  background-color: #fff;
+  padding: 70px 30px;
+  min-height: 100vh;
+  max-height: 800px;
+  overflow-y: auto;
 }
 
 input[type="checkbox"] {

@@ -46,11 +46,11 @@ $(function() {
   | them in this file.
   |
   */
-	$("#cart-btn").click(function () {
-		$("#cart").animate({right: "0px",},250);
+	$("#sidemenu-btn").click(function () {
+		$("#sidemenu").animate({ right: "0px" }, 250);
 	});
-	$("#x-cart-btn").click(function () {
-		$("#cart").animate({ right: "-400px" }, 250);
+	$("#x-sidemenu-btn").click(function () {
+		$("#sidemenu").animate({ right: "-400px" }, 250);
 	});
 	// $("#cart").hide();
 	$(document).ready(function () {
@@ -87,8 +87,8 @@ $(function() {
 		$("#translateBody").slideToggle(500);
 	});
 	$("#translateBody").hide();
-	$("translateBtn").on("click", ".toggle-arrow", function () {
-		$("#translateBtn li i").toggleClass("fa-chevron-down  fa-chevron-up");
+	$("#translateBtn").click(function () {
+		$(".toggle-arrow").toggleClass("fa-chevron-down  fa-chevron-up");
 	});		
 
 	// extras card
