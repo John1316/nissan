@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>Vichles</title>
+
+        <!-- Styles -->
+        <link href="assets/css/page.css" rel="stylesheet">
+        <link href="assets/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/lo.png">
+
+    </head>
+    <body class="demo-navbar">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+                
+                <div class="navbar-left">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/img/nissan/black.png" alt="logo">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <button class="navbar-toggler" type="button">&#9776;</button>
+                </div>
+                <section class="navbar-mobile">
+                    <nav class="nav nav-navbar ml-auto mt-nav">
+                        
+                        <a class="nav-link " href="index.html"> Vehicles</a>
+                        <a class="nav-link" href="products.html">SHOP@HOME</a>
+                        <a class="nav-link" href="products.html">BUSINESS FLEET</a>
+                        <a class="nav-link" href="products.html">OWNERS</a>
+                        <a class="nav-link" href="products.html">WHY nissan?</a>
+                        <a class="nav-link fw-700" href="ar/index.html"> عربي</a>
+                    </nav>
+
+                        
+                    
+                </section>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+
+
+        <!-- Start product lists -->
+        <header class="header-nissan-fleet py-5">
+            <div class="container">
+                
+                <div class="row no-gutters my-3">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">FLEET SALES</p>
+                        <h1 class="mt-0">WHY CHOOSE NISSAN</h1>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-12 mb-3 text-center">
+                        <p class="mb-0">WHY CHOOSE NISSAN</p>
+                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3 text-center">
+                        <p class="mb-0"> DEDICATED SERVICES</p>
+                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-4 col-12 mb-3 text-center">
+                        <p class="mb-0">PARTNERSHIP</p>
+                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-9 align-items-start py-7 no-gutters" style="background-image: url(assets/img/inner_pages/3000x1300.jpg); height: 700px; background-size: 100% 100%;">
+                <div class="col-lg-4 col-12">
+                    <div class="card card-overlay">
+                        <div class="card-body">
+                            <p class="card-text mb-0 text-white">NISSAN FLEET</p>
+                            <h4 class="card-title fs-25 text-white">GUARANTEED VEHICLE AVAILABILITY</h4>
+                            <p class="card-text text-white">The vehicles in our stockyard will be reserved for our business customers, which means vehicle availability is guaranteed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start section vehicles -->
+        <section class="vehicles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="heading fs-14 mb-0">STEP 1</p>
+                        <h2>CHOOSE YOUR NISSAN</h2>
+                        <p>Shop the complete Nissan model lineup, then select and build your perfect new vehicle.</p>
+                    </div>
+                </div>
+                <div class="row no-gutters align-items-end justify-content-between">
+                    <p class="fw-500 mb-0">7 nissan model available</p>
+                    <button class="btn-secondary btn mb-0" id="filterVehicles"><i class="fas fa-sliders-h text-main mr-2"></i>CHOOSE VEHICLE TYPE <i class="fas fa-check text-main"></i></button>
+                    <div class="form-group mb-0">
+                        <select class="form-control">
+                            <option>Popular Type</option>
+                            <option>Price asending</option>
+                            <option>Price: descending</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div data-provide="shuffle">
+                                <div class="card-body" style="background-color:#f1f1f1;" id="filterVehiclesBody">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <label for="">VEHICLE TYPES</label>
+                                            <nav class="nav nav-left nav-pills" data-shuffle="filter">
+                                                <div class="row no-gutters">
+                                                    <div class="col mr-3">
+        
+                                                        <a class="nav-link fs-14 active" href="#" data-shuffle="button">ALL VEHICLES</a>
+                                                    </div>
+                                                    <div class="col mr-3">
+                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="PASSENGER">PASSENGER VEHICLES</a>
+                                                    </div>
+                                                    <div class="col mr-3">
+        
+                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="SUVS">SUVS & CROSSOVERS</a>
+                                                    </div>
+                                                    <div class="col mr-3">
+                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="COMMERCIAL">COMMERCIAL VEHICLES</a>
+        
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="">PRICE</label>
+                                            <div class="progress bg-main"></div>
+                                            <label for="">Egp 35000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gap-y gap-2" data-shuffle="list">
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
+                                            <img src="assets/img/products/Sentra.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>SUNNY</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
+                                            <img src="assets/img/products/Sunny.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>SUNNY</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
+                                            <img src="assets/img/products/Urvan.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles mb-3"></div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
+                                            <img src="assets/img/products/side-new.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
+                                            <img src="assets/img/products/Juke.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
+                                            <img src="assets/img/products/pickup-eg.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
+                                            <img src="assets/img/products/pickup-eg2.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
+                                            <img src="assets/img/products/Qashqai.jpg" alt="screenshot">
+                                            <div class="row no-gutters">
+                                                <h2>Urvan</h2>
+                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
+                                            <h4>EGP 192,000</h4>
+                                            <div class="border-dashed min-height-vehicles">
+                                                <a href="" class="btn p-0 text-hover mt-3 fw-400">CONTACT FLEET SALES <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>   
+                                                <a href="" class="btn p-0 text-hover fw-400">DOWNLOAD BROCHURE <i class="fa fa-chevron-right ml-3 text-main" aria-hidden="true"></i></a>
+                                                <div class="border-dashed my-3"></div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section vehicles -->
+
+
+        <!-- start section contact showroom -->
+        <section class="contact py-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-7">
+                        <p class="heading fs-14 fw-700 mb-0">CHOOSE THE RIGHT PACKAGE</p>
+                        <h4 class="fs-35">SPEAK TO OUR SPECIALISTS IN FLEET VEHICLES</h4>
+                    </div>
+                    <div class="col-lg-6 py-4 col-12">
+                        <p>Our experts will help you choose the fleet vehicle and the financing solution that best suit your specific needs.</p>
+                        <button class="btn btn-main btn-lg">CONTACT US <i class="fas fa-chevron-right    "></i></button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <img src="assets/img/inner_pages/contact.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end  section contact showroom -->
+        <!-- start section aftersales-solutione -->
+        <section class="aftersales-solution">
+            <div class="container">
+                <div class="row justify-content-center my-7">
+                    <div class="col-12">
+                        <div class="card bg-orginial-gray">
+                            <div class="card-body py-8">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 mb-6">
+                                        <h3 class="text-center">TAKE THE NEXT STEP</h3>
+                                    </div>
+                                    <a href="" class="col-lg-6 text-center">
+                                        <i class="fa fa-map-marker-alt fa-3x text-main" aria-hidden="true"></i>
+                                        <p class="text-dark">NISSAN NETWORK</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section aftersales-solution -->
+
+
+        <!-- start bread-crumb -->
+        <section class="bread-crumb">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                    <ul class="list-unstyled mb-0" id="translateBtn">
+                        <li>English <i class="fa fa-chevron-down toggle-arrow text-main " aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-end" id="translateBody">
+                    <ul class="list-unstyled">
+                        <li>عربي</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end bread-crumb -->
+
+        <!-- Start footer -->
+        <footer class="footer text-white border-0 py-7" data-overlay="8">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <h3 class="mb-4"><strong>CONTACT US</strong></h3>
+                        <div class="nav flex-column">
+                            <p>Customer Service</p>
+                            <p>Fleet & Corporate Sales</p>
+                            <p>Recall Information</p>
+                            <p>Complaints</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3">
+                        <h3 class="mb-4"><strong>VEHICLES</strong></h3>
+                        <div class="nav flex-column">
+                            <a class="nav-link" href="../demo/Cateogry-1.html">New Vehicles</a>
+                            <a class="nav-link" href="../demo/Cateogry-2.html">Download Brochures</a>
+                            <a class="nav-link" href="../demo/Cateogry-3.html">Classic Singles</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Classic Tea Biscuits</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Classic Digestive Tea Biscuits</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <h3 class="mb-4"><strong>SHOPPING TOOLS</strong></h3>
+                        <div class="nav flex-column">
+                            <a class="nav-link" href="../demo/Cateogry-1.html">Shop@Home</a>
+                            <a class="nav-link" href="../demo/Cateogry-2.html">Request a Quote</a>
+                            <a class="nav-link" href="../demo/Cateogry-3.html">Request a Call Back</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Door To Door Service</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Order Online</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Find A Nissan Center</a>
+                            <a class="nav-link" href="../demo/Cateogry-4.html">Virtual Showroom</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-3 widget-area">
+                        <div class="widget flicker_widget clearfix">
+                            <h3 class="mb-4">SHOPPING TOOLS</h3>
+                            <div class="textwidget widget-text">
+                                    <div class="social social-sm social-bg-brand social-cycling mt-6">
+                                        <a class="social-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="social-youtube" href="#"><i class="fab fa-youtube"></i></a>
+                                        <a class="social-instagram" href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </footer>
+        <footer class="bg-dark py-4">
+            <div class="container">
+                    <div class="row no-gutters align-items-center">
+                    
+                        <div class="col-md-6 text-center">
+                            <div class="row no-gutters">
+                                
+                                <p class="mb-0">Global website</p>
+                                <p class="mb-0">Newroom</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="row no-gutters">
+                                
+                                <p class="mb-0">Legal and privacy</p>
+                                <p class="mb-0">&copysr; Nissan 2021</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+    <!-- script -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    </body>
+</html>
