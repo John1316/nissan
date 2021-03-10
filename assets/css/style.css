@@ -151,6 +151,20 @@ body {
   }
 }
 
+.nav-navbar .nav-link {
+  font-size: .95rem;
+}
+
+.nav-navbar .nav {
+  min-width: 16rem;
+}
+
+.nav-navbar .nav .nav-link {
+  font-weight: 700;
+  color: #343434;
+  padding: .75rem 1.5rem;
+}
+
 .badge-pos-right {
   top: 1rem !important;
   right: 1rem !important;
