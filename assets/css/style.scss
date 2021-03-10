@@ -242,8 +242,15 @@ body{
     min-width: 50px;
     max-width: 55px;
 }
+// .slider-position{
+//     position: absolute;
+//     bottom: -33px;
+// }
 //2 images animation
-
+// .slider__smallpics--position{
+//     position: absolute;
+//     bottom: -33px;
+// }
 .heading{
     font-size: 36px;
     margin-bottom: 30px;
@@ -447,12 +454,22 @@ body{
         .card{
             width: 460px;
         }
+        @media screen and (max-width:450px){
+            .card{
+                width: 350px;
+            }
+        }
+        @media screen and (max-width:377px){
+            .card{
+                width: 300px;
+            }
+        }
     }
     .position-right{
-        right: 50px;
+        right: 30px;
     }
     .position-left{
-        left: 50px;
+        left: 30px;
     }
 }
 .about-nismo{
@@ -464,6 +481,16 @@ body{
         }
         .card{
                 width: 460px;
+        }
+        @media screen and (max-width:450px){
+            .card{
+                width: 350px;
+            }
+        }
+        @media screen and (max-width:377px){
+            .card{
+                width: 300px;
+            }
         }
     }
     .position-right{
@@ -482,6 +509,16 @@ body{
         }
         .card{
                 width: 460px;
+            }
+        @media screen and (max-width:450px){
+                .card{
+                    display: none;
+                }
+            }
+            @media screen and (max-width:377px){
+                .card{
+                    display: none;
+                }
             }
     }
     .position-right{
@@ -503,6 +540,16 @@ body{
             top: 50px;
             .card{
                 width: 460px;
+            }
+            @media screen and (max-width:450px){
+                .card{
+                    width: 350px;
+                }
+            }
+            @media screen and (max-width:377px){
+                .card{
+                    width: 300px;
+                }
             }
         }
 
@@ -547,6 +594,7 @@ body{
     @media screen and (max-width: 800px) {
         display: none;
     }
+    
 }
 #sidemenu{
     position: fixed;
@@ -555,7 +603,11 @@ body{
     width: 400px;
     z-index: 99999999999999999;
 }
-
+#x-sidemenu-btn{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
 #sidemenu__options{
     background-color:#fff;
     padding: 70px 30px;
