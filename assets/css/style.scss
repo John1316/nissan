@@ -12,12 +12,19 @@ $light-gray:#8a8a8a;
 body{
     font-family: "Nissan Bold", "Nissan Regular", Verdana, Arial, sans-serif !important;
 }
-
+.text-dark{
+    color: #343434 !important;
+}
 // General
 .vh-95{
     height: 95vh;
 }
-
+.btn-vedio-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .slick-dots{
     bottom: 10px !important;
 }
@@ -29,6 +36,9 @@ body{
 }
 .fs-50{
     font-size: 50px;
+}
+.text-darklight{
+    color:#666;
 }
 .img-refresh{
     object-fit: cover;
@@ -85,9 +95,8 @@ body{
 .min-height-vehicles{
     min-height: 100px;
 }
-// .max-height{
-//     max-height: 722px;
-//     min-height: 722px;
+// .hr-gray-100{
+//     border: 2px solid #f5f5f5;
 // }
 .register-card{
     width: 750px;
@@ -335,6 +344,16 @@ body{
     .nav-pills .nav-link.active{
         background-color: #343434;
         color: #fff;
+        position: relative;
+        &::after{
+            content: "\2713";
+            color: #fff;
+            right: 7px;
+            font-size: 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
     .nav-pills .nav-link:hover{
         background-color: #343434;
@@ -343,6 +362,7 @@ body{
     .nav-pills .nav-link{
         border:1px solid #343434;
         color: #343434;
+        padding-right: 20px;
     }
 }
 // shop at home page
@@ -430,7 +450,24 @@ body{
     }
     .card{
         width: 460px;
-        background-color: rgba(0,0,0,0.6);
+    }
+}
+.about-nismo{
+    &__card{
+        position: absolute;
+        top: 50px;
+        @media screen and (min-width:800px) {
+            margin-top: 100px;
+        }
+    }
+    .position-right{
+        right: 50px;
+    }
+    .position-left{
+        left: 50px;
+    }
+    .card{
+        width: 460px;
     }
 }
 .to-door{

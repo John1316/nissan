@@ -2,8 +2,19 @@ body {
   font-family: "Nissan Bold", "Nissan Regular", Verdana, Arial, sans-serif !important;
 }
 
+.text-dark {
+  color: #343434 !important;
+}
+
 .vh-95 {
   height: 95vh;
+}
+
+.btn-vedio-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slick-dots {
@@ -20,6 +31,10 @@ body {
 
 .fs-50 {
   font-size: 50px;
+}
+
+.text-darklight {
+  color: #666;
 }
 
 .img-refresh {
@@ -367,6 +382,17 @@ body {
 .vehicles .nav-pills .nav-link.active {
   background-color: #343434;
   color: #fff;
+  position: relative;
+}
+
+.vehicles .nav-pills .nav-link.active::after {
+  content: "\2713";
+  color: #fff;
+  right: 7px;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .vehicles .nav-pills .nav-link:hover {
@@ -377,6 +403,7 @@ body {
 .vehicles .nav-pills .nav-link {
   border: 1px solid #343434;
   color: #343434;
+  padding-right: 20px;
 }
 
 .icon-hover:hover {
@@ -462,7 +489,29 @@ body {
 
 .images .card {
   width: 460px;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-nismo__card {
+  position: absolute;
+  top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .about-nismo__card {
+    margin-top: 100px;
+  }
+}
+
+.about-nismo .position-right {
+  right: 50px;
+}
+
+.about-nismo .position-left {
+  left: 50px;
+}
+
+.about-nismo .card {
+  width: 460px;
 }
 
 @media screen and (max-width: 800px) {
