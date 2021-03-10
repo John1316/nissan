@@ -29,6 +29,10 @@ body {
   font-size: 35px;
 }
 
+.fs-40 {
+  font-size: 40px;
+}
+
 .fs-50 {
   font-size: 50px;
 }
@@ -479,16 +483,16 @@ body {
   top: 50px;
 }
 
+.images__card .card {
+  width: 460px;
+}
+
 .images .position-right {
   right: 50px;
 }
 
 .images .position-left {
   left: 50px;
-}
-
-.images .card {
-  width: 460px;
 }
 
 .about-nismo__card {
@@ -502,6 +506,10 @@ body {
   }
 }
 
+.about-nismo__card .card {
+  width: 460px;
+}
+
 .about-nismo .position-right {
   right: 50px;
 }
@@ -510,8 +518,27 @@ body {
   left: 50px;
 }
 
-.about-nismo .card {
+.what-makes-nismo__card {
+  position: absolute;
+  top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .what-makes-nismo__card {
+    margin-top: 100px;
+  }
+}
+
+.what-makes-nismo__card .card {
   width: 460px;
+}
+
+.what-makes-nismo .position-right {
+  right: 100px;
+}
+
+.what-makes-nismo .position-left {
+  left: 50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -525,6 +552,10 @@ body {
   top: 50px;
 }
 
+.to-door__card .card {
+  width: 460px;
+}
+
 .to-door .position-left {
   left: 50px;
 }
@@ -532,23 +563,6 @@ body {
 @media screen and (max-width: 450px) {
   .to-door .position-left {
     left: 30px;
-  }
-}
-
-.to-door .card {
-  width: 460px;
-  background-color: transparent;
-}
-
-@media screen and (max-width: 800px) {
-  .to-door .card {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .to-door .card {
-    width: 100%;
   }
 }
 
