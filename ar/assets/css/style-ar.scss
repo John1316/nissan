@@ -14,7 +14,9 @@ html{
 :dir{
     direction: rtl;
 }
-
+.lang-active{
+    border-bottom: 2px solid #343434;
+}
 body{
     font-family: "Nissan Bold", "Nissan Regular", Verdana, Arial, sans-serif !important;
     text-align: right;
@@ -647,7 +649,7 @@ body{
 }
 #x-sidemenu-btn{
     position: absolute;
-    right: 40px;
+    left: 40px;
     top: 30px;
 }
 #sidemenu__options{
