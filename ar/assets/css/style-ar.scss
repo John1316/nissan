@@ -14,8 +14,9 @@ html{
 :dir{
     direction: rtl;
 }
+
 body{
-    font-family: 'El Messiri', sans-serif;
+    font-family: "Nissan Bold", "Nissan Regular", Verdana, Arial, sans-serif !important;
     text-align: right;
 }
 .text-dark{
@@ -137,6 +138,21 @@ body{
         }
     }
 }
+.nav-navbar{
+    .nav-link{
+        font-size: .95rem;
+    }
+    .nav{
+        min-width: 13.7rem;
+        .nav-link{
+            font-weight: 700;
+            color: #343434;
+            padding: .75rem 1.5rem;
+        }
+    }
+} 
+
+
 .badge-pos-right{
     top: 1rem !important;
     right: 1rem !important;
@@ -364,7 +380,7 @@ body{
         &::after{
             content: "\2713";
             color: #fff;
-            right: 7px;
+            left: 7px;
             font-size: 15px;
             position: absolute;
             top: 50%;
@@ -378,7 +394,7 @@ body{
     .nav-pills .nav-link{
         border:1px solid #343434;
         color: #343434;
-        padding-right: 20px;
+        padding-left: 25px;
     }
 }
 // shop at home page
@@ -596,6 +612,26 @@ body{
         }
 
 }
+.loader{
+    position: fixed;
+    background-color: $maincolor;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    z-index: 99999;
+    
+    &__img{
+        
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
 #sidemenu-btn{
     @media screen and (max-width: 800px) {
         display: none;
@@ -605,7 +641,7 @@ body{
 #sidemenu{
     position: fixed;
     top:0;
-    right: -400px; 
+    left: -400px; 
     width: 400px;
     z-index: 99999999999999999;
 }

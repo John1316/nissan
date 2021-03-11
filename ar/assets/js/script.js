@@ -47,10 +47,10 @@ $(function() {
   |
   */
 	$("#sidemenu-btn").click(function () {
-		$("#sidemenu").animate({ right: "0px" }, 250);
+		$("#sidemenu").animate({ left: "0px" }, 250);
 	});
 	$("#x-sidemenu-btn").click(function () {
-		$("#sidemenu").animate({ right: "-400px" }, 250);
+		$("#sidemenu").animate({ left: "-400px" }, 250);
 	});
 	// $("#cart").hide();
 	$(document).ready(function () {

@@ -46,11 +46,11 @@ $(function () {
   | them in this file.
   |
   */
-	$("#cart-btn").click(function () {
-		$("#cart").animate({ left: "0px" }, 250);
+	$("#sidemenu-btn").click(function () {
+		$("#sidemenu").animate({ left: "0px" }, 250);
 	});
-	$("#x-cart-btn").click(function () {
-		$("#cart").animate({ left: "-400px" }, 250);
+	$("#x-sidemenu-btn").click(function () {
+		$("#sidemenu").animate({ left: "-400px" }, 250);
 	});
 	// $("#cart").hide();
 	$(document).ready(function () {
@@ -75,5 +75,30 @@ $(function () {
 			? input.attr("type", "text")
 			: input.attr("type", "password");
 	});
+	// filter toogle button
+	$("#filterBtn").click(function () {
+		$("#filter").slideToggle(1500);
+	});
+	$("#filterVehicles").click(function () {
+		$("#filterVehiclesBody").slideToggle(500);
+	});
+	$("#filterVehiclesBody").hide();
+	$("#translateBtn").click(function () {
+		$("#translateBody").slideToggle(500);
+	});
+	$("#translateBody").hide();
+	$("#translateBtn").click(function () {
+		$(".toggle-arrow").toggleClass("fa-chevron-down  fa-chevron-up");
+	});
 
+	// extras card
+	$("#extras").click(function () {
+		$("#extrasCard").slideToggle(1500);
+	});
+	$("#extrasCard").hide();
+
+	// booking page search card
+	$("#bookingFilterBtn").click(function () {
+		$("#bookingFilterCard").slideToggle(1500);
+	});
 });

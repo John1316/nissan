@@ -133,7 +133,10 @@ body{
 }
 .nav-navbar{
     .nav-link{
-        font-size: .95rem;
+        @media screen and (max-width:800px){
+            
+            font-size: .95rem;
+        }
     }
     .nav{
         min-width: 16rem;
@@ -605,6 +608,28 @@ body{
         }
 
 }
+// loader
+.loader{
+    position: fixed;
+    background-color: $maincolor;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    z-index: 99999;
+    
+    &__img{
+        
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+// side-menu
 #sidemenu-btn{
     @media screen and (max-width: 800px) {
         display: none;
