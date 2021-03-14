@@ -96,7 +96,34 @@ body{
     background-color: rgba(0,0,0,0.6);
 }
 .min-height-vehicles{
-    min-height: 100px;
+    min-height: 120px;
+}
+.min-height-329px{
+    min-height: 329px;
+}
+
+.min-height-180px{
+    height: 227px;
+    border-bottom: 1px dashed #343434;
+
+}
+.btn-animation:hover{
+    color:$maincolor !important;
+    i{
+        animation: bounceRight 1s;
+    }
+}
+.btn-animation-white:hover{
+    i{
+        animation: bounceRight 1s;
+    }
+}
+@keyframes bounceRight {
+
+  
+  50% {
+    transform: translateX(30px);
+  }
 }
 .lang-active{
     border-bottom: 2px solid #343434;
@@ -114,7 +141,7 @@ body{
     border:2px solid rgba(0,0,0,0.2); 
 }
 .border-dashed{
-    border-top: 1px dashed #777;
+    border-top: 1px dashed #343434;
 }
 
 .img-profile{
@@ -372,6 +399,11 @@ body{
     }
 }
 .vehicles{
+    @media screen and (max-width:800px) {
+        .margin-bottom-responsive{
+            margin-bottom: 20px !important;
+        }
+    }
     .nav-pills .nav-link.active{
         background-color: #343434;
         color: #fff;
@@ -428,7 +460,21 @@ body{
             width: 100%;
         }
     }
-    &:hover{
+    &:hover::after{
+        transform: scaleX(1) !important;
+    }
+}
+.animation-button-card{
+    &::after{
+            display: block;
+            content: '';
+            border-bottom: 3px solid #c3002f;
+            transform: scaleX(0);
+            transition: transform .3s cubic-bezier(.445,.05,.55,.95);
+            position: static;
+            width: 100%;
+    }
+    &:hover::after{
         transform: scaleX(1) !important;
     }
 }
@@ -469,6 +515,11 @@ body{
     }
 }
 .images{
+    @media screen and (max-width:800px) {
+        .responsive-height{
+            height: 400px;
+        }
+    }
     &__card{
         position: absolute;
         top: 50px;
@@ -521,6 +572,25 @@ body{
         left: 50px;
     }
 }
+// patrol page you like section
+.you-like{
+    .card{
+        cursor: pointer;
+            &::after{
+                display: block;
+                content: '';
+                border-bottom: 2px solid #c3002f;
+                transform: scaleX(0);
+                transition: transform .3s cubic-bezier(.445,.05,.55,.95);
+                position: static;
+                width: 100%;
+            }
+            &:hover::after{
+                transform: scaleX(1) !important;
+            }
+    }
+}
+
 .what-makes-nismo{
     &__card{
         position: absolute;

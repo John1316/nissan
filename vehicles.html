@@ -137,7 +137,6 @@
             </div>
         </div> 
         <!-- end side menu -->
-        <!-- end side menu -->
         
 
         <!-- Start product lists -->
@@ -150,9 +149,9 @@
                     </div>
                 </div>
                 <div class="row no-gutters mb-3 align-items-end justify-content-between">
-                    <p class="fw-500 mb-0">7 nissan model available</p>
-                    <button class="btn-secondary btn mb-0" id="filterVehicles"><i class="fas fa-sliders-h text-main mr-2"></i>CHOOSE VEHICLE TYPE <i class="fas fa-check text-main"></i></button>
-                    <div class="form-group mb-0">
+                    <p class="fw-500 mb-0 margin-bottom-responsive">7 nissan model available</p>
+                    <button class="btn-secondary btn mb-0 margin-bottom-responsive" id="filterVehicles"><i class="fas fa-sliders-h text-main mr-2"></i>CHOOSE VEHICLE TYPE <i class="fas fa-check text-main"></i></button>
+                    <div class="form-group mb-0 margin-bottom-responsive">
                         <select class="form-control">
                             <option>Popular Type</option>
                             <option>Price asending</option>
@@ -166,31 +165,31 @@
                             <div data-provide="shuffle">
                                 <div class="card-body" style="background-color:#ccc;" id="filterVehiclesBody">
                                     <div class="row">
-                                        <div class="col-9">
+                                        <div class="col-lg-9 col-12">
                                             <label for="">VEHICLE TYPES</label>
                                             <nav class="nav nav-left nav-pills" data-shuffle="filter">
-                                                <div class="row no-gutters">
-                                                    <div class="col- mr-3">
+                                                <div class="row align-items-center w-100">
+                                                    <div class="col-lg-3 col-6 mb-3">
 
-                                                        <a class="nav-link fs-14 active" href="#" data-shuffle="button">ALL VEHICLES</a>
+                                                        <a class="nav-link fs-12 w-100 active" href="#" data-shuffle="button">ALL VEHICLES</a>
                                                     </div>
-                                                    <div class="col- mr-3">
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="PASSENGER">PASSENGER VEHICLES</a>
+                                                    <div class="col-lg-3 col-6 mb-3">
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="PASSENGER">PASSENGER VEHICLES</a>
                                                     </div>
-                                                    <div class="col- mr-3">
+                                                    <div class="col-lg-3 col-6 mb-3">
 
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="SUVS">SUVS & CROSSOVERS</a>
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="SUVS">SUVS & CROSSOVERS</a>
                                                     </div>
-                                                    <div class="col- mr-3">
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="COMMERCIAL">COMMERCIAL VEHICLES</a>
+                                                    <div class="col-lg-3 col-6 mb-3">
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="COMMERCIAL">COMMERCIAL VEHICLES</a>
 
                                                     </div>
                                                 </div>
                                             </nav>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-lg-3 col-12">
                                             <label for="">PRICE</label>
-                                            <div class="progress bg-main"></div>
+                                            <input type="range" class="form-control-range">
                                             <label for="">Egp 35000</label>
                                         </div>
                                     </div>
@@ -198,84 +197,110 @@
                                 <div class="card-body">
                                     <div class="row gap-y gap-2" data-shuffle="list">
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <img src="assets/img/products/Sentra.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>SUNNY</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="PASSENGER">
+                                            <a class="card" href="patrol.html">
+                                                <img src="assets/img/products/Sentra.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">Sentra <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                    <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                    <h4>EGP 192,000</h4>
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <img src="assets/img/products/Sunny.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>SUNNY</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5 " data-shuffle="item" data-groups="PASSENGER">
+                                            <a href="patrol.html">
+                                                <img src="assets/img/products/Sunny.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">SUNNY <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                        <h4>EGP 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/Urvan.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/Urvan.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">Urvan <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                        <h4>EGP 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <img src="assets/img/products/side-new.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="PASSENGER">
+                                            <a class="card" href="patrol.html">
+                                                <img src="assets/img/products/side-new.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">SENTRA PREMUIM <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                        <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                        <h4>EGP 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
-                                            <img src="assets/img/products/Juke.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="SUVS">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/Juke.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">JUKE <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                        <h4>EGP 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/pickup-eg.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/pickup-eg.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">PICKUP DOUBLE CABIN <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                        <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                        <h4>EGP 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/pickup-eg2.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/pickup-eg2.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">PICKUP SINGLE CABIN<i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                    <h4>EGP 192,000</h4>
+                                                    
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
-                                            <img src="assets/img/products/Qashqai.jpg" alt="screenshot">
-                                            <div class="row no-gutters">
-                                                <h2>Urvan</h2>
-                                                <i class="fas fa-chevron-right text-main ml-3 fa-3x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">Starting from <span class="text-danger">*</span></p>
-                                            <h4>EGP 192,000</h4>
+                                        <div class="col-12 col-lg-3 mb-5" data-shuffle="item" data-groups="SUVS">
+                                            <a class="card " href="patrol.html">
+
+                                                <img src="assets/img/products/Qashqai.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+
+                                                    <h4 class="fs-35">QASHQAI <i class="fas fa-chevron-right text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                    <p class="mb-0 text-dark">Starting from <span class="text-danger">*</span></p>
+                                                    <h4>EGP 192,000</h4>
+
+                                                </div>
+                                            </a>
                                         </div>
 
                                     </div>
@@ -287,142 +312,7 @@
             </div>
         </section>
         <!-- end product lists -->
-        <!-- modal begin -->
-        <div class="modal fade" id="quickview1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div data-provide="slider" data-autoplay="true" data-autoplay-speed="1000">
-                                    <div><img class="h-250px w-100" src="assets/img/products/بسكويت كاكاو 12 قطعة.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/بوكيت كاكاو.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/دانش فانيليا.jpg"></div>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <h3 class="mb-3">Classic Cocoa Cookie</h3>
-                                <div class="price d-flex">
-                                    <h4 class="text-main font-weight-bold mr-3">14 EGP</h4>
-                                    <h4 class="font-weight-bold"><s>50 EGP</s></h4>
-                                </div>
-                                <p class="mb-3">Classic Singles, which uses the same authentic Danish recipe using 100% butter with the flavor of Cocoa and it contains 12 cookies.</p>
-                                <div class="row no-gutters justify-content-between">
-                                        <input class="form-control-sm w-60px" min="1" value="1" type="number">
-                                        <button class="btn btn-main">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         
-        <div class="modal fade" id="quickview2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div data-provide="slider" data-autoplay="true" data-autoplay-speed="1000">
-                                    <div><img class="h-250px w-100" src="assets/img/products/بسكويت كاكاو 12 قطعة.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/بوكيت كاكاو.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/دانش فانيليا.jpg"></div>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <h3 class="mb-3">Classic Cocoa Pocket</h3>
-                                <div class="price d-flex">
-                                    <h4 class="text-main font-weight-bold mr-3">36 EGP</h4>
-                                    <h4 class="font-weight-bold"><s>50 EGP</s></h4>
-                                </div>
-                                <p class="mb-3">Classic Pocket Cookies is a great choice for good snack during the day… Classic Pocket Cocoa comes in a box that contains 4 packs.</p>
-                                <div class="row no-gutters justify-content-between">
-                                        <input class="form-control-sm w-60px" min="1" value="1" type="number">
-                                        <button class="btn btn-main">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="quickview3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div data-provide="slider" data-autoplay="true" data-autoplay-speed="1000">
-                                    <div><img class="h-250px w-100" src="assets/img/products/بسكويت كاكاو 12 قطعة.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/بوكيت كاكاو.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/دانش فانيليا.jpg"></div>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <h3 class="mb-3">Classic Vanilla Danish</h3>
-                                <div class="price d-flex">
-                                    <h4 class="text-main font-weight-bold mr-3">37 EGP</h4>
-                                    <h4 class="font-weight-bold"><s>50 EGP</s></h4>
-                                </div>
-                                <p class="mb-3">Danish tea biscuits make a perfect companion to that cup of tea or coffee in the morning, afternoon, or evening. Using a Danish recipe these biscuits.</p>
-                                <div class="row no-gutters justify-content-between">
-                                        <input class="form-control-sm w-60px" min="1" value="1" type="number">
-                                        <button class="btn btn-main">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="quickview4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div data-provide="slider" data-autoplay="true" data-autoplay-speed="1000">
-                                    <div><img class="h-250px w-100" src="assets/img/products/بسكويت كاكاو 12 قطعة.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/بوكيت كاكاو.jpg"></div>
-                                    <div><img class="h-250px w-100" src="assets/img/products/دانش فانيليا.jpg"></div>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <h3 class="mb-3">Classic Butter Cookies</h3>
-                                <div class="price d-flex">
-                                    <h4 class="text-main font-weight-bold mr-3">146 EGP</h4>
-                                </div>
-                                <p class="mb-3">Classic Singles, which uses the same authentic Danish recipe using 100% butter with the flavor of Cocoa and it contains 12 cookies.</p>
-                                <div class="row no-gutters justify-content-between">
-                                        <input class="form-control-sm w-60px" min="1" value="1" type="number">
-                                        <button class="btn btn-main">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- end modal section -->
 
         <!-- start bread-crumb -->
         <section class="bread-crumb">
