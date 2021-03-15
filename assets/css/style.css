@@ -25,6 +25,10 @@ body {
   font-size: 25px;
 }
 
+.fs-30 {
+  font-size: 30px;
+}
+
 .fs-35 {
   font-size: 35px;
 }
@@ -143,6 +147,16 @@ body {
 
 .lang-active {
   border-bottom: 2px solid #343434;
+}
+
+.slider-dots-line .slick-dots .slick-active button {
+  background-color: #c3002f;
+}
+
+.slider-dots-line .slick-dots button {
+  width: 140px !important;
+  height: 4px !important;
+  margin: 20px 0;
 }
 
 .register-card {
