@@ -113,6 +113,52 @@ body{
 // .hr-gray-100{
 //     border: 2px solid #f5f5f5;
 // }
+// slider slick
+.slider-dots-line .slick-dots .slick-active button {
+    background-color: $maincolor;
+}
+.slider-dots-line {
+
+    .slick-dots button {
+        width: 140px !important;
+        height: 4px !important;
+        margin: 20px 0;
+    }
+}
+.slider-arrows-flash-dark{
+    .slick-prev{
+        left:-3rem;
+        &::before{
+            position: absolute;
+            top: 50%;
+            width: 11px;
+            height: 11px;
+            margin-top: -5px;
+            border-width: 1px;
+            border-right-color: rgba($maincolor, 1);
+            border-bottom-color: rgba($maincolor, 1);
+        }
+        &::after{
+            content: none;
+        }
+    }
+    .slick-next{
+        right:-3rem;
+        &::before{
+            position: absolute;
+            top: 50%;
+            width: 11px;
+            height: 11px;
+            margin-top: -5px;
+            border-width: 1px;
+            border-left-color: rgba($maincolor, 1);
+            border-top-color: rgba($maincolor, 1);
+        }
+        &::after{
+            content: none;
+        }
+    }
+} 
 .register-card{
     width: 750px;
 }

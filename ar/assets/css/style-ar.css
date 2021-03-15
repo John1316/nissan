@@ -131,6 +131,54 @@ body {
   min-height: 100px;
 }
 
+.slider-dots-line .slick-dots .slick-active button {
+  background-color: #c3002f;
+}
+
+.slider-dots-line .slick-dots button {
+  width: 140px !important;
+  height: 4px !important;
+  margin: 20px 0;
+}
+
+.slider-arrows-flash-dark .slick-prev {
+  left: -3rem;
+}
+
+.slider-arrows-flash-dark .slick-prev::before {
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  margin-top: -5px;
+  border-width: 1px;
+  border-right-color: #c3002f;
+  border-bottom-color: #c3002f;
+}
+
+.slider-arrows-flash-dark .slick-prev::after {
+  content: none;
+}
+
+.slider-arrows-flash-dark .slick-next {
+  right: -3rem;
+}
+
+.slider-arrows-flash-dark .slick-next::before {
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  margin-top: -5px;
+  border-width: 1px;
+  border-left-color: #c3002f;
+  border-top-color: #c3002f;
+}
+
+.slider-arrows-flash-dark .slick-next::after {
+  content: none;
+}
+
 .register-card {
   width: 750px;
 }
