@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>Vichles</title>
+
+        <!-- Styles -->
+        <link href="assets/css/page.css" rel="stylesheet">
+        <link href="assets/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style-ar.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/lo.png">
+
+    </head>
+    <body class="demo-navbar">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/img/nissan/black.png" alt="logo">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <button class="navbar-toggler" type="button">&#9776;</button>
+                </div>
+                <section class="navbar-mobile">
+                    <nav class="nav nav-navbar mr-auto mb-7">
+                        
+                        <a class="nav-link text-dark" href="vehicles.html"> السيارات</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">تسوق من منزلك</a>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="shop-at-home.html">ابدأ التسوق</a>
+                                    <a class="nav-link" href="https://virtualshowroom.nissan.com.eg/en/">صالة العرض الإفتراضية</a>
+                                    <a class="nav-link" href="brochures.html">تصفح كاتالوج</a>
+                                    <a class="nav-link" href="quote.html">اطلب عرض أسعار</a>
+                                    <a class="nav-link" href="shop-at-home.html#testdrive">احجز تجربة قيادة منزلية</a>
+                                    <a class="nav-link" href="call-back.html">اطلب اتصال</a>
+                                    <a class="nav-link" href="home-service.html">خدمة استلام وتوصيل السيارة</a>
+                                    <a class="nav-link" href="order-online.html">اطلب سيارتك عبر الانترنت</a>
+                                    <a class="nav-link" href="covid-19.html">مستجدات COVID-19</a>
+                    
+                                </li>
+                            </ul>
+                        </li>
+
+                        <a class="nav-link text-dark" href="nissan-fleet.html">أسطول الشركات</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">خدمات المالك</a>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home-service.html">احجز موعد خدمة</a>
+                                    <a class="nav-link" href="mobile-app.html">تطبيق المالك</a>
+                                    <a class="nav-link" href="recall.html">معلومات الاستدعاء (Recall)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">إكتشف نيسان</a>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="experience-nissan-refresh.html">كل ما هو جديد</a>
+                                    <a class="nav-link" href="nissan-intelligent-mobility.html">التنقّل الذكي من نيسان</a>
+                                    <a class="nav-link" href="nismo-performance.html">أداء نيسمو</a>
+                                    <a class="nav-link" href="#">الأخبار</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <button class="btn text-dark fs-20" id="sidemenu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        <ul class="list-unstyled navbar__responsive__li px-0">
+                            <li class="my-4 nav-item"><a href="#" class="text-dark nav-link">صالة العرض الإفتراضية</a></li>
+                            <li class="my-4 nav-item"><a href="" class="text-dark nav-link">ابحث عن مركز نيسان</a></li>
+                            <li class="my-4 nav-item"><a href="order-online.html" class="text-dark nav-link">اطلب سيارتك عبر الانترنت</a></li>
+                            <li class="my-4 nav-item"><a href="brochures.html" class="text-dark nav-link">تصفّح الكاتالوجات</a></li>
+                            <li class="my-4 nav-item"><a href="contact-fleet-sales.html" class="text-dark nav-link">مبيعات الشركات</a></li>
+                            <li class="my-4 nav-item"><a href="call-back.html" class="text-dark nav-link">طلب اتصال</a></li>
+                            <li class="my-4 nav-item"><a href="quote.html" class="text-dark nav-link">تصفّح الكاتالوجات</a></li>
+                            <li class="my-4 nav-item"><a href="home-service.html" class="text-dark nav-link">إطلب عرض أسعار</a></li>
+                                    <div class="row">
+                                        <div class="col-6">
+
+                                            <li class="my-4"><a href="index.html" class="text-dark lang-active">عربي</a></li>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <li class="my-4"><a href="../index.html" class="text-dark">English</a></li>
+                                        </div>
+                                    </div>
+                        </ul>
+                    </nav>
+
+                        
+                    
+                </section>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+        
+        <!-- start side menu -->
+        <div class="sidemenu" id="sidemenu">
+            <div id="sidemenu__options" class="min-height">
+                <button id="x-sidemenu-btn" class="btn btn-white text-black fs-20 mb-0">X</button>
+                <div class="row no-gutters justify-content-between align-items-center">
+                    <ul class="list-unstyled">
+                        <li class="my-4"><a href="" class="text-dark">إتصل بنا</a></li>
+                    </ul>
+                </div>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="text-dark">صالة العرض الإفتراضية</a></li>
+                    <li class="my-4"><a href="" class="text-dark">ابحث عن مركز نيسان</a></li>
+                    <li class="my-4"><a href="order-online.html" class="text-dark">اطلب سيارتك عبر الانترنت</a></li>
+                    <li class="my-4"><a href="brochures.html" class="text-dark">تصفّح الكاتالوجات</a></li>
+                    <li class="my-4"><a href="contact-fleet-sales.html" class="text-dark">مبيعات الشركات</a></li>
+                    <li class="my-4"><a href="call-back.html" class="text-dark">طلب اتصال</a></li>
+                    <li class="my-4"><a href="quote.html" class="text-dark">تصفّح الكاتالوجات</a></li>
+                    <li class="my-4"><a href="home-service.html" class="text-dark">إطلب عرض أسعار</a></li>
+                    <div class="row">
+                        <div class="col-6">
+
+                            <li class="my-4"><a href="index.html" class="text-dark lang-active">عربي</a></li>
+                        </div>
+                        <div class="col-6">
+
+                            <li class="my-4"><a href="../index.html" class="text-dark">English</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div> 
+        <!-- end side menu -->
+
+        <!-- Start product lists -->
+        <header class="header-nissan-fleet py-5">
+            <div class="container">
+                
+                <div class="row no-gutters my-3 justify-content-center">
+                    <div class="col-12 text-center">
+                        <h1 class="mt-0">ما هي نيسمو؟</h1>
+                        <p class="mb-0">مع اسم مشتق من نيسان موتورسبورت، نيسمو هي تجسيد الأداء المطلق لنيسان. من هم نيسمو؟ نخبة من المهندسين ومتخصصي اختبار قيادة السيارات الذين عملوا وقادوا وحققوا نجاحات على جميع المستويات، وتصنع هذه النخبة التي تجمع ما بين أعلى درجات التفاني والمهارة والعاطفة سيارات نيسمو لطرقات المدينة التي تمنح سائقيها تجربة مثيرة وواقعية.</p>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="row justify-content-center no-gutters">
+                            <div class="col-6">
+                                <div class="row no-gutters">
+
+                            
+                                    <div class="col-3 mb-3 text-center">
+                                        <p class="mb-0 text-dark">ما هي نيسمو؟</p>
+                                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col mb-3 text-center">
+                                        <p class="mb-0 text-dark">الأداء</p>
+                                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col mb-3 text-center">
+                                        <p class="mb-0 text-dark">التحكّم</p>
+                                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col mb-3 text-center">
+                                        <p class="mb-0 text-dark">التصميم</p>
+                                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col mb-3 text-center">
+                                        <p class="mb-0 text-dark">تصنعه الأيدي</p>
+                                        <i class="fa fa-chevron-down icon-hover" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <img src="assets/img/inner_pages/whatis_header.jpg" class="w-100" alt="">
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start section RACETRACK  -->
+        <section class="racetrack">
+            <div class="container">
+                <p class="heading fs-16 text-dark mb-0">من مضمار السباق إلى طرقات المدينة</p>
+                <h3>أداء نيسان الفائق، كل يوم</h3>
+                <p>بقدر حماسنا وشغفنا بالأداء القوي، نؤكد أيضاً على حق عشاق السيارات الرياضية المذهلة في امتلاك سيارة نيسمو وقيادتها. لذلك يسعدنا تقديم مجموعة كبيرة من السيارات، التي تضم جميع الخصائص والمميزات ابتداءً من الديناميكية الهوائية المعززة ومروراً بأنظمة التعليق المعدلة خصيصاً للسباقات وانتهاءً بقمرة القيادة المستوحاة من سيارات السباق الأمر الذي يجعلك تحظى بسيارة تجمع ما بين أداء سيارات السباق المذهلة وأداء سيارات طرقات المدينة التي تشعرك بالراحة أثناء تنقلاتك اليومية.</p>
+            </div>
+            <div class="row no-gutters justify-content-end">
+                <img src="assets/img/inner_pages/whatis_perfor_section.jpg" class="w-100" alt="">
+                <span class="text-right mx-3">NISMO Human Engineered 1:34</span>
+            </div>
+
+        </section>
+        <!-- end section RACETRACK  -->
+
+        
+        <section class="why-only-nismo">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title mb-0 ">ما هو الطابع المميز لنيسمو</h4>
+                                <p class="card-text">المناورة الفائقة ليست وليدة البيانات المدخلة فحسب، بل تحتاج إلى لمسة بشرية. والسائقون المشاركون في تطوير نيسمو هم أكثر من مجرد سائقي سيارات سباق كل ما يشغلهم هو إنهاء لفات السباق في أسرع وقت. فهم يركزون على الصورة التي يجب أن تكون عليها السيارة. ما الذي يفيض بالإثارة. ما الذي يشعرك بالمتعة. متعة القيادة في طرقات المدينة تضاهي حلبات السباق. ويتأكدون من أن كل سيارة نيسمو تحمل الطابع المميز لها.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/inner_pages/nismo-kato-sanmart.jpg" class="w-100" alt="">
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-0 fs-18">أسطورة القيادة</h5>
+                                <p class="card-text fs-14">التقي بهيرويوشى كاتو. المسؤول الفني بنيسان. وسيد حلبة نوربورغرينغ بنيسان. وهو من النوع الذي لا يمكن إرضاؤه بسهولة. ولكن إذا نجحت في إرضائه، ستشعر بالسحر في كل مرة تكون فيها خلف عجلة القيادة.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/inner_pages/nismo-badge.jpg" class="w-100" alt="">
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-0 fs-18">شعار الفخامة</h5>
+                                <p class="card-text fs-14">نظراً للمبيعات التي تحققها نيسان نيسمو الآن في العديد من البلاد، يمكن لمحبي السيارات من جميع أنحاء العالم تقدير القدر الهائل من الدراية الفنية بالهندسة والاختبار والتصنيع المطلوبة قبل لصق شعار نيسمو على السيارة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- start section ADRENALINE  -->
+        <section class="adrenaline">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p class="mb-0 text-dark fw-700">قمة الإثارة</p>
+                                <h4 class="fs-30 fw-100">تصميم هندسي أثبتت جدارته حلبات السباق</h4>
+                                <p class="card-text">ضع قدمك على دواسة الوقود وانظر كيف سيمنحك التصميم الهندسي الذي أثبتت جدارته حلبات السباق تجربة قيادة لا تنسى في كل مرة، بفضل استجابته السريعة وعزم الدوران القوي منخفض السرعة ونطاق القوة الواسع وصوت الزئير الفريد الذي يعد من اللمسات المميزة لأنبوب العادم.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <img src="assets/img/inner_pages/adernaline.jpg" class="w-100" alt="">
+            </div>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-8 col-12">
+                        <img src="assets/img/inner_pages/nismo-gtr-race.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <div class="card-body py-0">
+                                <h4 class="fs-35 card-title">ثمرة التطوير المستمر</h4>
+                                <p class="card-text">تمر سيارات نيسان العادية بمراحل طويلة من التطوير والاختبار الديناميكي الشامل. وبعد ذلك يأتي دور فريق نيسمو الذي يواصل تطويرها. ثم تدخل مرحلة الفحص من جانب رئيس عمال الحرفيين. وتخضع لمزيد من الاختبارات. ومزيد من الهندسة. وبالنهاية يأتي الارتقاء بتجربة القيادة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 my-5 text-center">
+                        <h4 class="heading-center mb-1">لمسة بشرية فريدة</h4>
+                        <p>على الرغم من أهمية البيانات فهي لا تخبرك سوى بالكثير من الحقائق. والحقائق والأرقام وحدها لن تصل بك إلى الإثارة التي تبتغيها ولن تمنح تجربة قيادة لا تُنسى. لكن حتى تغمرك الإثارة نحتاج إلى إضافة لمسة خاصة من البراعة - لمسة بشرية فريدة - لتطبيق العلم وتحويله إلى ماكينة تنبض بالحياة والإثارة.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div dir="auto" class="slider-dots-line slider-arrows-flash-dark" data-provide="slider" data-dots="true" data-arrows="true">
+                            <div>
+                                <img src="assets/img/inner_pages/nismo-driver-with-engineer.jpg" class="w-100">
+                                <div class="row justify-content-center no-gutters my-7">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Hidden Language of Data</h5>
+                                                <p class="card-text">Numbers speak – but it takes a special talent to know what they're really saying. NISMO engineers are involved during the entire process of vehicle development. Combing through an incredible amount of data, engineers can pinpoint the exact points to make the vehicle have that unique NISMO feel. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><img src="assets/img/inner_pages/nismo-driver-with-engineer-19.jpg" class="w-100">
+                                <div class="row justify-content-center no-gutters my-7">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Hidden Language of Data</h5>
+                                                <p class="card-text">Numbers speak – but it takes a special talent to know what they're really saying. NISMO engineers are involved during the entire process of vehicle development. Combing through an incredible amount of data, engineers can pinpoint the exact points to make the vehicle have that unique NISMO feel. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><img src="assets/img/inner_pages/nismo-engineers.jpg" class="w-100">
+                                <div class="row justify-content-center no-gutters my-7">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Hidden Language of Data</h5>
+                                                <p class="card-text">Numbers speak – but it takes a special talent to know what they're really saying. NISMO engineers are involved during the entire process of vehicle development. Combing through an incredible amount of data, engineers can pinpoint the exact points to make the vehicle have that unique NISMO feel. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end section ADRENALINE  -->
+
+        <!-- start section handling -->
+        <section class="handling">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p class="fs-16 fw-700 text-dark mb-1">ثبات على الطريق</p>
+                                <h4 class="fs-35 card-title">قوة الثبات في الانعطافات</h4>
+                                <p class="card-text">ثبات تشعر به في عجلة القيادة والمقاعد والدواسات. ويمكن أن تضم أنظمة التعليق المعدّلة خصيصاً للسباقات تحسينات مثل الزنبركات الأكثر صلابة ومخمدات الهيكل ودواعم الشاسيه لمنحك قوة ثبات ودقة هائلة على الطريق. تستجيب نيسمو لأوامرك وكأنها تقرأ أفكارك.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <img src="assets/img/inner_pages/hand-section.jpg" class="w-100" alt="">
+            </div>
+            <div class="container">
+                
+                <div class="row no-gutters">
+                    <div class="col-lg-8 col-12">
+                        <img src="assets/img/inner_pages/handle-row-1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <div class="card-body py-0">
+                                <p class="mb-0 text-dark fw-600">داخل عالم نيسمو</p>
+                                <h4 class="fs-35 fw-400">تعزيز الجسم والهيكل</h4>
+                                <p class="card-text">تمر سيارات نيسمو عبر سلسلة من تعزيزات صلابة الجسم والهيكل بعد ما تغادر السيارة خط التجميع.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters my-7">
+                    <div class="col-lg-6 col-12">
+                        <div class="card">
+                            <div class="card-body py-0">
+                                <h4 class="fs-30 fw-400">الدعم الهيكلي الكبير</h4>
+                                <p class="card-text">تخضع موديلات نيسمو لدعم هيكلي على نطاق واسع. ويخضع كل جزء للاختبار بعد أن تترك السيارات خط التجميع على أيدي فريق مميز. فيخضع كل مسمار ربط للفحص مرة ومرتين.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <img src="assets/img/inner_pages/handle-row-2.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section handlling -->
+        
+        <!-- start section gripping-performance -->
+        <section class="gripping-performance py-7">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <p class="card-body">
+                                <p class="fs-16 fw-700 text-dark mb-1">نقطة الاتصال بين السيارة والطريق</p>
+                                <h4 class="fs-35 card-title">أداء فائق</h4>
+                                <p class="card-text">بمجرد ما تبدأ في الانعطاف يخبرك نظام التوجيه بكل ما تحتاج إلى معرفته. اضغط على المكابح وتمتع بقدرة هائلة على التحكم تسمح لك بتحقيق توازن تام في الشاسيه لتحظى بدقة في الثبات. وقد خضعت مئات الإطارات والمكابح والعجلات على حلبات السباق والطرقات للاختبار للكشف عن المجموعة الصحيحة المناسبة للشاسيه وللتأكد من تحكمك التام بالقيادة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <img src="assets/img/inner_pages/gripping.jpg" class="w-100 my-5" alt="">
+            </div>
+            <div class="container">
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p class="mb-0 text-dark fw-600">داخل عالم نيسمو</p>
+                                <h4 class="fs-30 card-title">تبدأ السيارة بالإطارات</h4>
+                                <p class="card-text">الإطارات المناسبة ضرورية لكل شيء آخر. فلا يمكنك ضبط ممتص الصدمات أو الملفات أو اختيار صلابة العجلات المناسبة حتى تحصل على حجم الإطار المناسب والمركب المناسب.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    
+                    <div class="col-12">
+                        <img src="assets/img/inner_pages/gripping-row-1.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end section gripping-performance -->
+        
+        <!-- start section aerodynamic -->
+        <section class="aerodynamic py-7">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <p class="card-body">
+                                <p class="fs-16 fw-700 text-dark mb-1">كيمياء الديناميكية الهوائية</p>
+                                <h4 class="fs-35 card-title">تصميم مدفوع بالأداء</h4>
+                                <p class="card-text">تتألق سيارة نيسمو بالصورة التي هي عليها لسبب واحد بسيط ألا وهو الأداء النقي. فتصميمها الدقيق الذي تناول كل تفاصيلها يمنحها إطلالةً رائعة ممزوجة بقوة هائلة تساعدك على التحكم في الطريق، بينما تحد الألياف الكربونية من الوزن دون التأثير على القوة. كما تساعد اللمسات الجمالية التي تضفي رونقاً على التصميم كالناشر الخلفي والجناح الخلفي والعتبات الجانبية على الحد من مقاومة الهواء حتى تجتازه برشاقة. والحقيقة أن إطلالتها الرائعة هي ما تبرز قوة شخصيتها.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <img src="assets/img/inner_pages/aeodynamic.jpg" class="w-100 my-5" alt="">
+            </div>
+            <div class="container">
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                
+
+                                <p class="mb-0 text-dark fw-600">قمرة قيادة مريحة مستوحاة من سيارات السباق</p>
+                                <h4 class="fs-30 card-title">قمرة قيادة متميزة بتركيزها على السائق</h4>
+                                <p class="card-text">مقاعد رياضية مدعمة تحتويك عند الانعطافات. ويضفي قماش الكانتارا® لمسة من الراحة والأناقة على قبضتك لعجلة القيادة. وتوجد علامة حمراء مستوحاة من قيادة سيارات الرالي والانزلاق الانعطافي تزيّن أعلى عجلة القيادة لتسمح لك بتحديد رأس عجلة القيادة. ويصبح السائق والسيارة في قمرة قيادة نيسمو شخصاً واحداً.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    
+                    <div class="col-12">
+                        <img src="assets/img/inner_pages/aerodynamic-row-1.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end section aerodynamic -->
+
+        <!--  start section HAND-BUILT  -->
+        <section class="hand-built">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6 col-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text text-dark mb-0 fs-18">شغف تصنعه الأيدي</p>
+                            <h5 class="fs-35 text-dark card-title">داخل عالم نيسمو</h5>
+                            <p class="text-dark fs-20">تنطلق موديلات نيسمو بعد تجميعها مثل أي إصدار عادي. لكن بعد الانتهاء من السيارات الأخرى، تنطلق موديلات نيسمو في رحلة جديدة. وهي رحلة وضع اللمسات البشرية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                
+                <div class="col-12">
+
+                    <img src="assets/img/inner_pages/hand-built.jpg" class="w-100 my-5" alt="">
+                    <a class="btn btn-circle btn-vedio-image btn-secondary mr-5" href="https://www.youtube.com/embed/M5S_JBRjd1s" data-provide="lightbox"><i class="fa fa-play"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                
+                <div class="row no-gutters py-6">
+                    <div class="col-lg-8 col-12">
+                        <img src="assets/img/inner_pages/nismo-factory.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <div class="card-body py-0">
+                                <h4 class="fs-35 fw-400">مطليّة يدوياً</h4>
+                                <p class="card-text">يتعين إجراء عملية تغليف يدوي خاصة (خاصة بموديلات نيسمو) للوصول إلى ألوان العلامة التجارية نيسمو في كل سيارة مصنعة. لتحقيق مستوى الجودة المطلوبة، يتم دهان الأجزاء الرئيسية بما يشمل العتبات الجانبية والمصدات في 3 خطوات منفصلة. وتتطلب كل خطوة تقنياً لإتمام التغليف اليدوي لكل طبقة من اللون بدقة. وتضمن هذه الخطوات الإضافية أعلى درجات الجودة والمتانة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters py-6">
+                    <div class="col-lg-4 col-12">
+                        <img src="assets/img/inner_pages/nismo-factory-build-skirt-19tdigbpace317.jpg.ximg.l_4_m.smart.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card text-center">
+                            <div class="card-body py-0">
+                                <h4 class="fs-25 fw-400 mb-5">تجميع كل جزء على حدة</h4>
+                                <p class="card-text">يجمع التقنيون أجزاء الجسم الخاصة بموديلات نيسمو مثل العتبات الجانبية والجناحات الخلفية. ويخضع كل جزء لفحص يدوي بعناية للتأكد من توافقه وملاءمته.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <img src="assets/img/inner_pages/nismo-factory-1smart.jpg" class="w-100" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--  end section HAND-BUILT  -->
+
+        <!-- start section ABOUT NISMO -->
+        <section class="about-nismo position-relative pt-9 pb-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="assets/img/inner_pages/nismo-race-track-profile-19tdigbpace319.jpg.ximg.l_12_m.smart.jpg" class="w-100" alt="">
+                        <div class="about-nismo__card position-right">
+                            <div class="card card-overlay">
+                                <div class="card-body">
+                                    <h2 class="card-title text-white">اكتشف تراث نيسمو ومجتمعها والمزيد</h2>
+                                    <p class="card-text text-white mb-1">نيسمو أكثر من مجرد سيارة مذهلة - إنها أسلوب حياة. وأنت مدعو!</p>
+                                    <a href="" class="text-white btn btn-main btn-lg btn-animation-white">اكتشف أداء نيسمو <i class="fa fa-chevron-left mr-3 " aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section ABOUT NISMO -->
+
+        
+
+        <!-- start bread-crumb -->
+        <section class="bread-crumb">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+
+                            <li class="breadcrumb-item"><a href="index.html">نيسان موتور إيجيبت</a></li>
+                            <li class="breadcrumb-item"><a href="experience-nissan-refresh.html"> ما الجديد؟ </a></li>
+                            <li class="breadcrumb-item"><a href="nissan-intelligent-mobility.html"> التنقل الذكي من نيسان  </a></li>
+                            <li class="breadcrumb-item active" aria-current="page">الطاقة الذكية من نيسان</li>
+                        </ol>
+                    </nav>
+                    <ul class="list-unstyled mb-0" id="translateBtn">
+                        <li class="text-white">عربي <i class="fa fa-chevron-down toggle-arrow text-main " aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-end" id="translateBody">
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="../index.html">English</a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end bread-crumb -->
+
+        <!-- Start footer -->
+        <footer class="footer text-white border-0 py-7" data-overlay="8">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <h4 class="mb-4 fs-20"><strong>تواصل معنا</strong></h4>
+                        <div class="nav flex-column">
+                            <p><a href="">خدمة العملاء</a></p>
+                            <p><a href="">مبيعات الشركات</a></p>
+                            <p><a href="">معلومات الاستدعاء (Recall)</a></p>
+                            <p><a href="">الشكاوي</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3">
+                        <h4 class="mb-4 fs-20"><strong>السيارات</strong></h4>
+                        <div class="nav flex-column">
+                            <a class="nav-link" href="../demo/Cateogry-1.html">سيارات جديدة</a>
+                            <a class="nav-link" href="../demo/Cateogry-2.html">تصفّح الكاتالوجات</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <h4 class="mb-4 fs-20"><strong>أدوات التسوق</strong></h4>
+                        <div class="nav flex-column">
+                            
+                                <li><a href="#">صالة العرض الإفتراضية</a></li>
+                                <li><a href="#">ابحث عن مركز نيسان</a></li>
+                                <li><a href="order-online.html">اطلب سيارتك عبر الانترنت</a></li>
+                                <li><a href="brochures.html">تصفّح الكاتالوجات</a></li>
+                                <li><a href="contact-fleet-sales.html">مبيعات الشركات</a></li>
+                                <li><a href="call-back.html">طلب اتصال</a></li>
+                                <li><a href="quote.html">تصفّح الكاتالوجات</a></li>
+                                <li><a href="home-service.html">إطلب عرض أسعار</a></li>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-3 widget-area">
+                        <div class="widget flicker_widget clearfix">
+                            <h4 class="mb-4 fs-20">نيسان والتواصل الإجتماعي</h4>
+                            <div class="textwidget widget-text">
+                                    <div class="social social-sm social-bg-brand social-cycling mt-6">
+                                        <a class="social-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="social-youtube" href="#"><i class="fab fa-youtube"></i></a>
+                                        <a class="social-instagram" href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </footer>
+        <footer class="bg-dark py-4">
+            <div class="container">
+                    <div class="row no-gutters align-items-center">
+                    
+                        <div class="col-md-6 text-center">
+                            <div class="row no-gutters">
+                                
+ 
+
+
+                                <p class="mb-0 mx-3">لمواقع عالمية</p>
+                                <p class="mb-0 mx-3">الأخبار</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="row no-gutters">
+                                
+                                <p class="mb-0">الخصوصية و الشروط القانونية</p>
+                                <p class="mb-0 mx-3"> Nissan 2021&copy;</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+    <!-- script -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    </body>
+</html>

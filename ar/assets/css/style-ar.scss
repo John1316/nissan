@@ -43,6 +43,9 @@ body{
 .fs-35{
     font-size: 35px;
 }
+.fs-30{
+    font-size: 30px;
+}
 .fs-40{
     font-size: 40px;
 }
@@ -613,6 +616,42 @@ body{
             }
         }
 
+}
+.btn-animation:hover{
+    color:$maincolor !important;
+    i{
+        animation: bounceLeft 1s;
+    }
+}
+.btn-animation-white:hover{
+    i{
+        animation: bounceLeft 1s;
+    }
+}
+@keyframes bounceLeft {
+
+  
+  0% {
+    transform: translateX(30px);
+  }
+}
+.animation-button-card{
+    &::after{
+            display: block;
+            content: '';
+            border-bottom: 3px solid #c3002f;
+            transform: scaleX(0);
+            transition: transform .3s cubic-bezier(.445,.05,.55,.95);
+            position: static;
+            width: 100%;
+    }
+    &:hover::after{
+        transform: scaleX(1) !important;
+    }
+}
+.min-height-180px{
+    min-height: 227px;
+    border-bottom: 1px dashed #343434;
 }
 .loader{
     position: fixed;
