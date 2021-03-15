@@ -176,11 +176,11 @@
                             <div class="row">
                                 <div class="col-12">
 
-                                    <a href="about-nissan.html" class="btn btn-main px-6 py-3">اختر نيسان <i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></a>
+                                    <a href="about-nissan.html" class="btn btn-animation-white btn-main px-6 py-3">اختر نيسان <i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="col-12">
 
-                                    <a href="contact-fleet-sales.html" class="btn btn-main px-6 py-3 mt-4">اتصل بفريق الأسطول <i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></a>
+                                    <a href="contact-fleet-sales.html" class="btn btn-animation-white btn-main px-6 py-3 mt-4">اتصل بفريق الأسطول <i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -195,14 +195,15 @@
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-12">
-                        <h1 class="mt-0 heading mb-0">مجموعة سيارات أسطول نيسان</h1>
-                        <p>تقدم لكم نيسان مجموعة شاملة من الطرازات التي تشمل سيارات التجارية وSUV وسيارات الركاب.</p>
+                        <p class="heading fs-16 mb-0">الخطوة الأولى</p>
+                        <h1 class="mb-0 font-weight-bold">اختر سيارتك</h1>
+                        <p class="mt-0">تعرف إلى مجموعة سيارات نيسان، واختر الموديل المناسب لك للتخصيص.</p>
                     </div>
                 </div>
-                <div class="row no-gutters mb-3 align-items-end justify-content-between">
-                    <p class="fw-500 mb-0">9 موديلات متوفرة</p>
-                    <button class="btn-secondary btn mb-0" id="filterVehicles"><i class="fas fa-sliders-h text-main ml-2"></i>إختر نوع السيارة <i class="fas fa-check text-main"></i></button>
-                    <div class="form-group mb-0">
+                <div class="row no-gutters align-items-end justify-content-between">
+                    <p class="fw-500 mb-0 margin-bottom-responsive">9 موديل متوفر</p>
+                    <button class="btn-secondary btn mb-0 margin-bottom-responsive" id="filterVehicles"><i class="fas fa-sliders-h text-main mr-2"></i>إختر نوع السيارة <i class="fas fa-check text-main"></i></button>
+                    <div class="form-group mb-0 margin-bottom-responsive">
                         <select class="form-control">
                             <option>الأنواع المفضلة</option>
                             <option>أسعار تصاعدية</option>
@@ -214,124 +215,141 @@
                     <div class="col-12">
                         <div class="card">
                             <div data-provide="shuffle">
-                                <div class="card-body" style="background-color:#ccc;" id="filterVehiclesBody">
+                                <div class="card-body bg-secondary" id="filterVehiclesBody">
                                     <div class="row">
-                                        <div class="col-9">
-                                            <label for="">إختر نوع السيارة</label>
+                                        <div class="col-lg-9 col-12">
+                                            <label for="">نوع السيارة</label>
                                             <nav class="nav nav-left nav-pills" data-shuffle="filter">
-                                                <div class="row no-gutters">
-                                                    <div class="col- mr-3">
+                                                <div class="row align-items-center w-100">
+                                                    <div class="col-lg-3 col-6 mb-3">
 
-                                                        <a class="nav-link fs-14 active" href="#" data-shuffle="button">جميع السيارات</a>
+                                                        <a class="nav-link fs-12 w-100 active" href="#" data-shuffle="button">جميع سيارات</a>
                                                     </div>
-                                                    <div class="col- mr-3">
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="PASSENGER">سيارات الركاب</a>
+                                                    <div class="col-lg-3 col-6 mb-3">
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="PASSENGER">سيارات الركاب</a>
                                                     </div>
-                                                    <div class="col- mr-3">
+                                                    <div class="col-lg-3 col-6 mb-3">
 
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="SUVS">سيارات الدفع الرباعي</a>
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="SUVS">سيارات الدفع الرباعي</a>
                                                     </div>
-                                                    <div class="col- mr-3">
-                                                        <a class="nav-link fs-14" href="#" data-shuffle="button" data-group="COMMERCIAL">سيارات تجارية</a>
+                                                    <div class="col-lg-3 col-6 mb-3">
+                                                        <a class="nav-link fs-12 w-100" href="#" data-shuffle="button" data-group="COMMERCIAL">سيارات تجارية</a>
 
                                                     </div>
                                                 </div>
                                             </nav>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row gap-y gap-2" data-shuffle="list">
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <a href="patrol.html" class="text-dark">
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="PASSENGER">
+                                            <a class="card" href="patrol.html">
                                                 <img src="assets/img/products/Sentra.jpg" alt="screenshot">
-                                                <div class="row align-items-center no-gutters">
-                                                    <h2>صني</h2>
-                                                    <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">سنترا <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
                                                 </div>
-                                                <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                                <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
                                             </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <img src="assets/img/products/Sunny.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>صني</h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                            <div class="border-dashed"></div>
-
+                                        <div class="col-12 col-lg-3 mb-5 " data-shuffle="item" data-groups="PASSENGER">
+                                            <a href="patrol.html">
+                                                <img src="assets/img/products/Sunny.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">صني <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/Urvan.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/Urvan.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">أورڤان <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="PASSENGER">
-                                            <img src="assets/img/products/side-new.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="PASSENGER">
+                                            <a class="card" href="patrol.html">
+                                                <img src="assets/img/products/side-new.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">نيسان سنترا <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
-                                            <img src="assets/img/products/Juke.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="SUVS">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/Juke.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">جيك <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/pickup-eg.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/pickup-eg.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">بيك أب بمقصورة مزدوجة <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                        <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                        <h4>جنيه 192,000</h4>
+                                                        
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="COMMERCIAL">
-                                            <img src="assets/img/products/pickup-eg2.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5  " data-shuffle="item" data-groups="COMMERCIAL">
+                                            <a class="card" href="patrol.html">
+
+                                                <img src="assets/img/products/pickup-eg2.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+                                                    <h4 class="fs-35">بيك أب بمقصورة مفردة<i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                    <h4>جنيه 192,000</h4>
+                                                    
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="col-6 col-lg-3" data-shuffle="item" data-groups="SUVS">
-                                            <img src="assets/img/products/Qashqai.jpg" alt="screenshot">
-                                            <div class="row align-items-center no-gutters">
-                                                <h2>أورڤان </h2>
-                                                <i class="fas fa-chevron-left text-main mr-3 fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="mb-0">إبتداءً من<span class="text-danger">*</span></p>
-                                            <h4>329,500 جنيه</h4>
-                                                <div class="border-dashed"></div>
+                                        <div class="col-12 col-lg-3 mb-5" data-shuffle="item" data-groups="SUVS">
+                                            <a class="card " href="patrol.html">
+
+                                                <img src="assets/img/products/Qashqai.jpg" alt="screenshot">
+                                                <div class="card-body min-height-180px px-0">
+
+                                                    <h4 class="fs-35">قاشقاي <i class="fas fa-chevron-left text-main ml-3 mb-1 fa-1x" aria-hidden="true"></i></h2>
+                                                    
+                                                    <p class="mb-0 text-dark">إبتداءً من <span class="text-danger">*</span></p>
+                                                    <h4>جنيه 192,000</h4>
+
+                                                </div>
+                                            </a>
                                         </div>
 
                                     </div>
@@ -354,7 +372,7 @@
                     </div>
                     <div class="col-lg-6 py-4 col-12">
                         <p>نحن هنا لتلبية جميع متطلبات أعمالك. لدينا فريق متخصص لدراسة احتياجاتك وتقديم الحلول المناسبة لك.</p>
-                        <button class="btn btn-main btn-lg">اتصل بنا <i class="fas fa-chevron-left mr-3    "></i></button>
+                        <button class="btn btn-animation-white btn-main btn-lg">اتصل بنا <i class="fas fa-chevron-left mr-3    "></i></button>
                     </div>
                     <div class="col-lg-6 col-12">
                         <img src="assets/img/inner_pages/contact.jpg" alt="">
@@ -377,7 +395,7 @@
                     </div>
                     <div class="col-lg-6 py-4 col-12">
                         <p>في عام 2005، أصبحت نيسان أول شركة يابانية لصناعة السيارات بإقامة مصنع في مصر ، عندما أنشأت مصنعاً لها محافظة الجيزة “Nissan Motor Egypt S.A.E” . تمتد عمليات نيسان مصر اليوم إلى المدن الرئيسية.</p>
-                        <button class="btn btn-main btn-lg">اكتشف المزيد<i class="fas mr-3 fa-chevron-left    "></i></button>
+                        <button class="btn btn-main btn-animation-white btn-lg">اكتشف المزيد<i class="fas mr-3 fa-chevron-left    "></i></button>
                     </div>
                 </div>
             </div>
@@ -389,21 +407,28 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="card bg-orginial-gray">
+                        <div class="card bg-secondary">
                             <div class="card-body py-8">
                                 <div class="row">
                                     <div class="col-12 mb-6">
                                         <h3 class="text-center">حلول مابعد البيع</h3>
                                     </div>
-                                    <a href="" class="col-lg-6 text-center">
-                                        <i class="fa fa-car fa-3x text-main" aria-hidden="true"></i>
-                                        <p class="text-dark">حد أدنى مخفّض لوقت تعطّل الاسطول</p>
-                                    </a>
-                                    <a href="" class="col-lg-6 text-center">
-                                        <i class="fa fa-money fa-3x text-main" aria-hidden="true"></i>
-                                        <p class="text-dark">ضمان نيسان</p>
-                                    </a>
-
+                                    
+                                </div>
+                                <div class="row no-gutters justify-content-center">
+                                    <div class="col-6">
+                                        <div class="row no-gutters">
+                                            
+                                            <a href="" class="col-lg-6 animation-button-card text-center">
+                                                <i class="fa fa-car fa-3x text-main" aria-hidden="true"></i>
+                                                <p class="text-dark">حد أدنى مخفّض لوقت تعطّل الاسطول</p>
+                                            </a>
+                                            <a href="" class="col-lg-6 animation-button-card text-center">
+                                                <i class="fa fa-money fa-3x text-main" aria-hidden="true"></i>
+                                                <p class="text-dark">ضمان نيسان</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -427,7 +452,7 @@
                             <div class="card-body px-0 pt-7">
                                 <h4 class="mb-2">شبكة نيسان</h4>
                                 <p class="text-dark fw-100">باعتبارها واحدة من العلامات التجارية الرائدة في المنطقة، تمتلك نيسان شبكة واسعة من الوكلاء. أينما كان نشاطك التجاري، يوجد وكيل قريب يلبي جميع احتياجات سيارتك.</p>
-                                <button class="btn btn-main fs-14 fw-400">شبكة نيسان<i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></button>
+                                <button class="btn btn-animation-white btn-main fs-14 fw-400">شبكة نيسان<i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -437,7 +462,7 @@
                             <div class="card-body px-0 pt-7">
                                 <h4 class="mb-2">راحة بال كاملة</h4>
                                 <p class="text-dark fw-100">نعلم في نيسان بأنه إلى جانب أسعارنا المنافسة، فإن التكلفة الإجمالية للملكية هي عامل أساسي في أي قرار تجاري.</p>
-                                <button class="btn btn-main fs-14 fw-400">اكتشف المنافع<i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></button>
+                                <button class="btn btn-animation-white btn-main fs-14 fw-400">اكتشف المنافع<i class="fa mr-3 fa-chevron-left" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -451,7 +476,7 @@
             <div class="container">
                 <div class="row justify-content-center my-7">
                     <div class="col-12">
-                        <div class="card bg-orginial-gray">
+                        <div class="card bg-secondary">
                             <div class="card-body py-8">
                                 <div class="row justify-content-center">
                                     <div class="col-12 mb-6">
@@ -460,11 +485,11 @@
                                     <div class="col-md-7 col-12">
                                         <div class="row">
                                             
-                                            <a href="#" class="col-lg-6 text-center">
+                                            <a href="#" class="col-lg-6 animation-button-card text-center">
                                                 <i class="fa fa-at fa-3x text-main" aria-hidden="true"></i>
                                                 <p class="text-dark">اتصل بنا</p>
                                             </a>
-                                            <a href="contact-fleet-sales.html" class="col-lg-6 text-center">
+                                            <a href="contact-fleet-sales.html" class="col-lg-6 animation-button-card text-center">
                                                 <i class="fa fa-map-marker-alt fa-3x text-main" aria-hidden="true"></i>
                                                 <p class="text-dark">شبكة نيسان</p>
                                             </a>
