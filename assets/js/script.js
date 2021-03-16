@@ -102,7 +102,11 @@ $(function() {
 		$("#bookingFilterCard").slideToggle(1500);
 	});
 
-	
+	$("a").click(function () {
+		let aHref = $(this).attr("href");
+		let profileOffset = $(aHref).offset().top;
+		$("body,html").animate({ scrollTop: profileOffset }, 1000);
+	});
 
 });
 
