@@ -596,18 +596,6 @@ body{
 .you-like{
     .card{
         cursor: pointer;
-            &::after{
-                display: block;
-                content: '';
-                border-bottom: 2px solid #c3002f;
-                transform: scaleX(0);
-                transition: transform .3s cubic-bezier(.445,.05,.55,.95);
-                position: static;
-                width: 100%;
-            }
-            &:hover::after{
-                transform: scaleX(1) !important;
-            }
     }
 }
 
@@ -769,4 +757,38 @@ input[type="checkbox"]:checked + label:before {
     color: $maincolor;
     content: "\2713";
     text-align: center;
+}
+input[type="range"]{
+    width: 100%;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 1rem;
+    background: $maincolor;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 1.5rem;
+    width: 1rem;
+    border-radius: 10%;
+    background: white;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }

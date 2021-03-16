@@ -107,6 +107,13 @@ $(function() {
 		let profileOffset = $(aHref).offset().top;
 		$("body,html").animate({ scrollTop: profileOffset }, 1000);
 	});
+	var range = document.getElementById("myRange");
+	var output = document.getElementById("outputRange");
+	output.innerHTML = "EGP "+range.value; // Display the default slider value
 
+	// Update the current slider value (each time you drag the slider handle)
+	range.oninput = function () {
+		output.innerHTML = "EGP "+this.value;
+	};
 });
 
