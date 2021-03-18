@@ -90,6 +90,9 @@ $(function() {
 	$("#translateBtn").click(function () {
 		$(".toggle-arrow").toggleClass("fa-chevron-down  fa-chevron-up");
 	});		
+	$(".accordion").click(function () {
+		$("#accordionBtn").toggleClass("fa-chevron-down  fa-chevron-up");
+	});		
 
 	// extras card
 	$("#extras").click(function () {

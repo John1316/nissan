@@ -199,6 +199,10 @@ body {
   }
 }
 
+.nav-navbar .nav-item {
+  text-align: left;
+}
+
 @media screen and (max-width: 800px) {
   .nav-navbar .nav-link {
     font-size: .95rem;
@@ -213,6 +217,41 @@ body {
   font-weight: 700;
   color: #343434;
   padding: .75rem 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .responsive-sub-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .responsive-sub-header-open {
+    display: none;
+  }
+}
+
+.responsive-sub-header .nav-navbar .nav-link {
+  padding: 0;
+  margin: 0 1.25rem;
+}
+
+.responsive-sub-header .nav-navbar .nav-link.active {
+  border-bottom: 1px solid #343434;
+}
+
+.responsive-sub-header-open .accordion .card-title a::before {
+  content: none;
+}
+
+.responsive-sub-header-open .accordion .card-title a::after {
+  content: none;
+}
+
+@media screen and (max-width: 800px) {
+  #sidemenuBtn {
+    display: none;
+  }
 }
 
 .badge-pos-right {
@@ -818,41 +857,5 @@ input[type="checkbox"]:checked + label:before {
   color: #c3002f;
   content: "\2713";
   text-align: center;
-}
-
-input[type="range"] {
-  width: 100%;
-}
-
-input[type=range] {
-  -webkit-appearance: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  height: 1rem;
-  background: #c3002f;
-  border: none;
-  border-radius: 3px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 1.5rem;
-  width: 1rem;
-  border-radius: 10%;
-  background: white;
-  margin-top: -4px;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 /*# sourceMappingURL=style.css.map */
