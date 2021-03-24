@@ -11,97 +11,9 @@
         <!-- Styles -->
         <link href="assets/css/page.css" rel="stylesheet">
         <link href="assets/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/nouislider.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
-        <style>
 
-
-input[type=range] {
-    -webkit-appearance: none;
-    background-color: #fff;
-    width: 300px;
-    height: 15px;
-    overflow:hidden;
-    margin: 0;
-
-}
-input[type=range]:focus{
-    outline:none;
-}
-input[type="range"]::-webkit-slider-thumb {
-    position:relative;
-    -webkit-appearance: none;
-    cursor:pointer;
-    background-color: transparent;
-    width: 30px;
-    height: 18px;
-    box-shadow: 1px 5px 10px -1px rgba(0, 0, 0,0.8),
-    -25px 0 0 10px rgb(255, 0, 43),
-    -75px 0 0 10px rgb(255, 0, 43),
-    -125px 0 0 10px rgb(255, 0, 43),
-    -175px 0 0 10px rgb(255, 0, 43),
-    -225px 0 0 10px rgb(255, 0, 43),
-    -275px 0 0 10px rgb(255, 0, 43),
-    -325px 0 0 10px rgb(255, 0, 43);
-  z-index:2;
-}
-/* input[type="range"]::-webkit-slider-thumb:after {
-content: "";
-position: absolute;
-z-index: 1;
-left: -285px;
-top: -28px;
-width: 300px;
-height: 20px;
-background: #9FE472;
-transform: rotateX(90deg);
-transform-origin: 0 0px 0;
-transform: rotateX(90deg) translateY(-140px) translateZ(-18px);
-}
-input[type="range"]::-webkit-slider-thumb:before {
-content: "< >";
-font-family: 'Concert One', cursive;
-position: absolute;
-
-top: -2px;
-left: 0px;
-border-radius: 20px;
-color: #5a5a5a;
-text-shadow: 0 1px 0 white;
-height: 22px;
-width: 32px;
-border-top: 1px solid white;
-border-left: 1px solid white;
-box-sizing: border-box;
-text-align: center;
-line-height: 19px;
-font-size: 17px;
-}
-
-input[type="range"]::-webkit-slider-runnable-track:after {
-content: "";
-position: absolute;
-height: 10px;
-width: 270px;
-background: rgb(247, 247, 247);
-top: 0;
-right: 26px;
-transform: skew(62deg);
-} */
-
-
-.budget {
-position: absolute;
-top: 50%;
-left:0;
-margin-top: -100px;
-text-align: center;
-width: 100%;
-font-size: 2em;
-font-family: 'Advent Pro', sans-serif;
-color: rgb(58, 58, 58);
-}
-
-        </style>
         <!-- Favicons -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -284,13 +196,10 @@ color: rgb(58, 58, 58);
                                                     </label>
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="range">
-                                                        <input type="range" name="range" id="range" min="0" max="2000" step="5" value="175"/>
-                                                    </label>
+                                                    <div id="tap"></div>
                                                 </div>
                                                 <div class="col-12">
-
-                                                    <output for="range" class="output">EGP 0</output>
+                                                    <div id="slider-range-value">EGP</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,12 +336,12 @@ color: rgb(58, 58, 58);
                         </ol>
                     </nav>
                     <ul class="list-unstyled mb-0" id="translateBtn">
-                        <li>English <i class="fa fa-chevron-down toggle-arrow text-main " aria-hidden="true"></i></li>
+                        <li class="text-white">English <i class="fa fa-chevron-down toggle-arrow text-main " aria-hidden="true"></i></li>
                     </ul>
                 </div>
                 <div class="row justify-content-end" id="translateBody">
                     <ul class="list-unstyled">
-                        <li><a href="ar/"></a>عربي</li>
+                        <li><a class="text-white" href="ar/index.html">عربي</a></li>
                     </ul>
                 </div>
             </div>
@@ -516,11 +425,24 @@ color: rgb(58, 58, 58);
 
     <!-- script -->
     <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/nouislider.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        $('#range').on("input", function() {
-            $('.output').val("Egp "+this.value +",000" );
-        }).trigger("change");
+        var rangeSlider = document.getElementById('tap');
+            noUiSlider.create(rangeSlider, {
+                start: 0,
+                behaviour: 'snap',
+                connect: [true, false],
+                range: {
+                    'min': 0,
+                    'max': 2000000
+                }
+            });
+            var rangeSliderValueElement = document.getElementById('slider-range-value');
+
+            rangeSlider.noUiSlider.on('update', function (values, handle) {
+                rangeSliderValueElement.innerHTML = values[handle]+" EGP";
+            });
     </script>
     </body>
 </html>

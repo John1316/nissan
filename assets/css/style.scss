@@ -182,6 +182,12 @@ body{
     }
     
 }
+.nav-navbar > .nav-link{
+    line-height: 35px !important;
+}
+.nav-navbar > .nav-item > .nav-link{
+    line-height: 35px !important;
+}
 .nav-navbar{
     .nav-item{
         text-align: left;
@@ -201,7 +207,9 @@ body{
         }
     }
 } 
-
+.third-header .active{
+    border-bottom: 1px solid #343434;
+}
 @media screen and (max-width:800px){
     .responsive-sub-header{
         display: none;
@@ -236,6 +244,7 @@ body{
         display: none;
     }
 }
+
 .badge-pos-right{
     top: 1rem !important;
     right: 1rem !important;
@@ -752,6 +761,8 @@ body{
     @media screen and (max-width: 800px) {
         display: none;
     }
+    padding: 0 25px !important;
+    line-height: 30px;
 }
 #sidemenu{
     position: fixed;

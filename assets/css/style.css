@@ -199,6 +199,14 @@ body {
   }
 }
 
+.nav-navbar > .nav-link {
+  line-height: 35px !important;
+}
+
+.nav-navbar > .nav-item > .nav-link {
+  line-height: 35px !important;
+}
+
 .nav-navbar .nav-item {
   text-align: left;
 }
@@ -217,6 +225,10 @@ body {
   font-weight: 700;
   color: #343434;
   padding: .75rem 1.5rem;
+}
+
+.third-header .active {
+  border-bottom: 1px solid #343434;
 }
 
 @media screen and (max-width: 800px) {
@@ -803,6 +815,11 @@ body {
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#sidemenu-btn {
+  padding: 0 25px !important;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 800px) {
